@@ -56,6 +56,16 @@ internal class Program
                     }
                     break;
 
+                case "5": 
+                    FileInfo fileInfo = new FileInfo("C:../../../UsersJson.json");
+                    Console.WriteLine($"byte: {fileInfo.Length}");
+                    break; 
+
+                case "6":
+                    FileInfo fileInfo1 = new FileInfo("C:../../../Userstxt.txt");
+                    Console.WriteLine($"byte: {fileInfo1.Length}");
+                    break;
+
                 case "0": break;
 
                 default:
@@ -99,16 +109,19 @@ internal class Program
 
     private static void PrintStorage()
     {
-        Console.WriteLine("1. text.");
-        Console.WriteLine("2. json.");
+        Console.WriteLine("1. text: ");
+        Console.WriteLine("2. json: ");
         Console.Write("Enter your file choise: ");
     }
+
     private static void PrintMenu()
     {
         Console.WriteLine("1.Create User");
         Console.WriteLine("2.Display User");
         Console.WriteLine("3.Delete User by ID");
         Console.WriteLine("4.Update User by ID");
+        Console.WriteLine("5.JSON xajmini ko`rish");
+        Console.WriteLine("6.txt xajmini ko`rish");
         Console.WriteLine("0.Exit");
     }
 }
