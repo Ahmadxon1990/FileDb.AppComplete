@@ -1,5 +1,4 @@
-﻿
-namespace FileDb.AppComplete.Services.UserProcessing
+﻿namespace FileDb.AppComplete.Services.UserProcessing
 {
     internal interface IUserProcessingService
     {

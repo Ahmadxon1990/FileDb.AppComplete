@@ -9,10 +9,7 @@ namespace FileDB.AppComplete.Brokers.Storages
     {
         private const string FilePath = "../../../UsersJson.json";
 
-        public JsonStorage() 
-        {
-            EnsureFileExists();
-        }
+        public JsonStorage() => EnsureFileExists();
 
         public User AddUser(User user)
         {

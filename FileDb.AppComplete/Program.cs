@@ -1,4 +1,5 @@
 ﻿using FileDb.AppComplete.Brokers.Storages;
+using FileDb.AppComplete.Services.FilesMemoryService;
 using FileDb.AppComplete.Services.Identities;
 using FileDb.AppComplete.Services.UserProcessing;
 using FileDb.AppComplete.Services.UserServices;
@@ -66,6 +67,13 @@ internal class Program
                     Console.WriteLine($"byte: {fileInfo1.Length}");
                     break;
 
+                case "7":
+                    string path = "C:\\Users\\Ahmadxon\\Source\\Repos\\FileDb.AppComplete\\FileDb.AppComplete\\Assets\\";
+                    DirectoryInfo directoryInfo = new DirectoryInfo(path);
+                    IFilesMemory filesMemory = new FilesMemory();
+                    Console.WriteLine($"Total size {filesMemory.GetFilesSize(directoryInfo)}");
+                    break;
+
                 case "0": break;
 
                 default:
@@ -122,6 +130,7 @@ internal class Program
         Console.WriteLine("4.Update User by ID");
         Console.WriteLine("5.JSON xajmini ko`rish");
         Console.WriteLine("6.txt xajmini ko`rish");
+        Console.WriteLine("7.Total files xajmini ko`rish");
         Console.WriteLine("0.Exit");
     }
 }

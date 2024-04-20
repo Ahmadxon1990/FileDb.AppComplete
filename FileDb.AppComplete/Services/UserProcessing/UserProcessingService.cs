@@ -24,11 +24,8 @@ namespace FileDb.AppComplete.Services.UserProcessing
             this.userService.AddUser(user);
         }
 
-        public void DisplayUsers()
-        {
-            this.userService.ShowUsers();
-        }
-
+        public void DisplayUsers() => this.userService.ShowUsers();
+        
         public void UpdateUser(int id, string name)
         {
             User user = new User()
@@ -39,9 +36,6 @@ namespace FileDb.AppComplete.Services.UserProcessing
             this.userService.Update(user);
         }
 
-        public void DeleteUser(int id)
-        {
-            this.userService.Delete(id);
-        }
+        public void DeleteUser(int id) => this.userService.Delete(id);
     }
 }

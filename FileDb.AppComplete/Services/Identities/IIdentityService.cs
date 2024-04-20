@@ -1,5 +1,4 @@
-﻿
-namespace FileDb.AppComplete.Services.Identities
+﻿namespace FileDb.AppComplete.Services.Identities
 {
     internal interface IIdentityService
     {
