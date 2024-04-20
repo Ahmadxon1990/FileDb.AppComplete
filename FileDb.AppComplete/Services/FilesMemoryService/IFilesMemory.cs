@@ -2,7 +2,6 @@
 {
     internal interface IFilesMemory
     {
-        public long GetFilesSize(DirectoryInfo directoryInfo);
-       
+        public long GetFilesSize(DirectoryInfo directoryInfo); 
     }
 }
