@@ -58,12 +58,12 @@ internal class Program
                     break;
 
                 case "5": 
-                    FileInfo fileInfo = new FileInfo("C:../../../UsersJson.json");
+                    FileInfo fileInfo = new FileInfo("../../../Assets/UsersJson.json");
                     Console.WriteLine($"byte: {fileInfo.Length}");
                     break; 
 
                 case "6":
-                    FileInfo fileInfo1 = new FileInfo("C:../../../Userstxt.txt");
+                    FileInfo fileInfo1 = new FileInfo("../../../Assets/Userstxt.txt");
                     Console.WriteLine($"byte: {fileInfo1.Length}");
                     break;
 
@@ -71,7 +71,7 @@ internal class Program
                     string path = "C:../../../Assets";
                     DirectoryInfo directoryInfo = new DirectoryInfo(path);
                     IFilesMemory filesMemory = new FilesMemory();
-                    Console.WriteLine($"Total size {filesMemory.GetFilesSize(directoryInfo)}");
+                    Console.WriteLine($"Total size (byte) {filesMemory.GetFilesSize(directoryInfo)}");
                     break;
 
                 case "0": break;
