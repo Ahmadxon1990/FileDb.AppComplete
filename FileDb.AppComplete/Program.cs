@@ -68,7 +68,7 @@ internal class Program
                     break;
 
                 case "7":
-                    string path = "C:\\Users\\Ahmadxon\\Source\\Repos\\FileDb.AppComplete\\FileDb.AppComplete\\Assets\\";
+                    string path = "C:../../../Assets";
                     DirectoryInfo directoryInfo = new DirectoryInfo(path);
                     IFilesMemory filesMemory = new FilesMemory();
                     Console.WriteLine($"Total size {filesMemory.GetFilesSize(directoryInfo)}");

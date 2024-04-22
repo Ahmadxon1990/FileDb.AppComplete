@@ -4,7 +4,7 @@ namespace FileDb.AppComplete.Brokers.Storages
 {
     internal class FileStorageBroker : IStoragesBroker
     {
-        public string FILEPATH = "../../../Userstxt.txt";
+        public string FILEPATH = "../../../Assets/Userstxt.txt";
         public FileStorageBroker() => EnsureFileExists();
         
         public User AddUser(User user)
@@ -20,7 +20,7 @@ namespace FileDb.AppComplete.Brokers.Storages
             List<User> users = ReadAllUsers();
             for (int i = 0; i < users.Count; i++)
             {
-                if (users[i].Id is user.Id)
+                if (users[i].Id == user.Id)
                 {
                     users[i] = user;
                     break;

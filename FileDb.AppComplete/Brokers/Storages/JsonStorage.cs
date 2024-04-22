@@ -7,7 +7,7 @@ namespace FileDB.AppComplete.Brokers.Storages
 {
     internal class JsonStorage : IStoragesBroker
     {
-        private const string FilePath = "../../../UsersJson.json";
+        private const string FilePath = "../../../Assets/UsersJson.json";
 
         public JsonStorage() => EnsureFileExists();
 
